@@ -13,6 +13,12 @@ body {
     justify-content: center;
     
 }
+.flower-1{
+    animation: popUp 2s ease forwards;
+}
+.flower-2{
+    animation: popUp 2s ease forwards;
+}
 
 .pot-bottom {
     width: 190px;
@@ -24,6 +30,8 @@ body {
     transform: translateX(-50%);
     clip-path: polygon(0% 100%, 100% 100%, 80% 0%, 20% 0%);
     border-radius: 20px;
+    z-index: 10;
+    animation: popUp 2s ease forwards;
 }
 
 .center-1 {
@@ -223,4 +231,14 @@ body {
         z-index: 10;
     }
 
+}
+@keyframes popUp {
+    0% {
+        bottom: -200px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0; 
+        opacity: 1;
+    }
 }

@@ -281,7 +281,7 @@ function startTimer() {
         timer = 10;
         startTimer();
       } else {
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
       }
     }
   }, 1000);
